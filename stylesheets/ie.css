@@ -1,0 +1,38 @@
+#wrapper {
+  width: 900px;
+}
+#menu {
+  width: 870px;
+}
+#logo {
+  width: 830px;
+}
+#page {
+  width: 870px;
+  padding: 0 15px 20px;
+  background-position: 630px top;
+} 
+#content {
+  width: 590px;
+  padding-right: 25px;
+}
+#sidebar {
+  width: 210px;
+  margin: 20px 20px 0 20px;
+}
+#onpage_search {
+  width: 120px;
+  margin-right: 5px;
+  padding: 3px;
+}
+#footer-inner {
+  width: 450px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+#designby {
+  width: 150px;
+}
+#edicy {
+  width: 150px;
+}
