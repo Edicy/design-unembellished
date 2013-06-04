@@ -32,6 +32,7 @@
 h3 {
   font-size:14px;
 }
+html {  -webkit-text-size-adjust: none; }
 
   #wrapper a, #footer a, #langmenu a {
   color: #8A7645;
@@ -517,6 +518,43 @@ float: right;
 font-size: 10px;
 width: 17.4%;
    }
+   
+   
+/* article tags */
+.article-tags { margin-top: 20px; font-size: 14px; min-height: 1em; }
+.edy-tag-input { outline: none; }
+.article-tag-icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url('../images/tag.png') no-repeat center center;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    margin-right: 7px;
+    margin-top: 3px;
+}
+.svg .article-tag-icon { background: url('../images/tag.svg') no-repeat center center; }
+.tagged-list-header {
+    padding: 0;
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.header-tag-icon {
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url('../images/header-tag.png') no-repeat center center;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    margin-top: 3px;
+    margin-right: 15px;
+}
+.svg .header-tag-icon { background: url('../images/header-tag.svg') no-repeat center center; }
+.tagged-list-header  a {border: none; text-decoration: none;}
+.tagged-list-header  a:hover { border-bottom: 1px solid #BEBEBE; }
+.article-tags .edy-taglist { margin-left: 25px; }   
 
 /* forms */
    .form_area {
@@ -573,6 +611,7 @@ body .add-article {
 }
 .edy-site-blog-comment {
   line-height: 17px
+  line-height: 1.2em;
 }
 @media screen and (max-width: 945px) {
   body {
@@ -639,4 +678,5 @@ body .add-article {
   #edicy {
     width: 100%; float: none;
   }
+  .form_field_textfield, .form_field_textarea { width: 97% }
 }

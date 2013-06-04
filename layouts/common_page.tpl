@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 {% include "SiteHeader" %}
-  <title>{{site.name}} &gt; {{page.title}}</title>
 </head>
 <body{% if site.has_many_languages? %} class="languages-body"{% endif %}{% if editmode %} class="languages-body"{% endif %}>
   {% include "Langmenu" %}

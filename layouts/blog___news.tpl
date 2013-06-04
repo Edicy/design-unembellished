@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 {% include "SiteHeader" %}
-  <title>{{site.name}} &gt; {{page.title}}</title>
 {{ blog.rss_link }}
 </head>
 <body{% if site.has_many_languages? %} class="languages-body"{% endif %}{% if editmode %} class="languages-body"{% endif %}>
@@ -26,6 +25,16 @@
    {% include "Submenu" %}
    </div>
    <div class="content-inner">
+       {% if tags %}
+            <div class="tagged-list-header">
+                <div class="header-tag-icon"></div>
+                {% if tags == empty %}
+                    {{ "no_posts_tagged" | lc }}
+                {% else %}
+                    {{ "posts_tagged" | lc }} '{{ tags | sort:"name" | map:"name" | join:"', '"}}'.
+                {% endif %}
+            </div>
+        {% endif %}
      {% addbutton class="add-article" %}
      
 	{% for article in articles %}
