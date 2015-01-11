@@ -23,7 +23,7 @@
    <div id="menus">
    {% include "Submenu" %}
    </div>
-   <div class="content-inner clearfix">
+   <div class="content-inner clearfix" data-search-indexing-allowed="true">
    {% content %}
    </div>
 	</div>

@@ -28,8 +28,8 @@
   <div class="post" style="border-bottom: none;">
     <h1 class="title">{% editable article.title %} | <span class="blog-author">{{article.created_at | format_date:"%d %b %y"}}, {{article.author.name}}</a></h1>
    <div class="entry">
-    <div class="excerpt clearfix">{% editable article.excerpt %}</div>
-    <div class="clearfix">{% editable article.body %}</div>
+    <div class="excerpt clearfix" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
+    <div class="clearfix" data-search-indexing-allowed="true">{% editable article.body %}</div>
     <div class="clearfix">
         {% if editmode %}
         <div class="cfx article-tags">
