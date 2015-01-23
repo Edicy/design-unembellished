@@ -8,7 +8,7 @@
   {% include "Langmenu" %}
 <div id="wrapper">
 <!-- start header -->
-<div id="header">
+<div id="header" class="content-hyphenate">
 	<div id="logo" class="clearfix">
    {% editable site.header %}
    <div class="clearer"></div>
@@ -38,7 +38,7 @@
      {% addbutton class="add-article" %}
      
 	{% for article in articles %}
-  <div class="post">
+  <div class="post content-hyphenate">
     <h1 class="title"><a href="{{article.url}}">{{article.title}}</a> | <span class="blog-author">{{article.created_at | format_date:"%d %b %y"}}, {{article.author.name}}</span></h1>
    <div class="entry">
     <p class="clearfix">{{article.excerpt}}</p>
@@ -65,7 +65,7 @@
 </div>
 <!-- start footer -->
 <div id="footer">
-   <div id="legal" class="clearfix"><div id="designby">Unembellished template by <a href="http://www.freecsstemplates.org">freeCSStemplates.org</a></div><div id="footer-inner" class="clearfix">{% xcontent name="footer" %}</div><div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div></div>
+   <div id="legal" class="clearfix content-hyphenate"><div id="designby">Unembellished template by <a href="http://www.freecsstemplates.org">freeCSStemplates.org</a></div><div id="footer-inner" class="clearfix">{% xcontent name="footer" %}</div><div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div></div>
 </div>
   {% include "JS" %}
 <!-- end footer -->

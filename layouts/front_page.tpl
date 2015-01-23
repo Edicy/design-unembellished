@@ -7,7 +7,7 @@
     {% include "Langmenu" %}
 <div id="wrapper">
 <!-- start header -->
-<div id="header">
+<div id="header" class="content-hyphenate">
 	<div id="logo" class="clearfix">
   {% editable site.header %}
    <div class="clearer"></div>
@@ -17,7 +17,7 @@
 <!-- end header -->
 
 <!-- start page -->
-<div id="page">
+<div id="page" class="content-hyphenate">
 	<!-- start content -->
 	<div id="content">
    <div id="menus">
@@ -42,7 +42,7 @@
 </div>
 <!-- start footer -->
 <div id="footer">
-   <div id="legal" class="clearfix"><div id="designby">Unembellished template by <a href="http://www.freecsstemplates.org">freeCSStemplates.org</a></div><div id="footer-inner" class="clearfix">{% xcontent name="footer" %}</div><div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div></div>
+   <div id="legal" class="clearfix content-hyphenate"><div id="designby">Unembellished template by <a href="http://www.freecsstemplates.org">freeCSStemplates.org</a></div><div id="footer-inner" class="clearfix">{% xcontent name="footer" %}</div><div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div></div>
 </div>
     {% include "JS" %}
 <!-- end footer -->

@@ -124,6 +124,14 @@ html {  -webkit-text-size-adjust: none; }
   background: url(../images/img02.jpg?1) no-repeat left top;
   }
 
+.content-hyphenate {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
   /* Header */
 
   /* Menu */

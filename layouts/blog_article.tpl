@@ -8,7 +8,7 @@
   {% include "Langmenu" %}
 <div id="wrapper">
 <!-- start header -->
-<div id="header">
+<div id="header" class="content-hyphenate">
 	<div id="logo" class="clearfix">
   {% editable site.header %}
    <div class="clearer"></div>
@@ -26,10 +26,10 @@
    </div>
    <div class="content-inner">
   <div class="post" style="border-bottom: none;">
-    <h1 class="title">{% editable article.title %} | <span class="blog-author">{{article.created_at | format_date:"%d %b %y"}}, {{article.author.name}}</a></h1>
+    <h1 class="title content-hyphenate">{% editable article.title %} | <span class="blog-author">{{article.created_at | format_date:"%d %b %y"}}, {{article.author.name}}</a></h1>
    <div class="entry">
-    <div class="excerpt clearfix" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
-    <div class="clearfix" data-search-indexing-allowed="true">{% editable article.body %}</div>
+    <div class="excerpt clearfix content-hyphenate" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
+    <div class="clearfix content-hyphenate" data-search-indexing-allowed="true">{% editable article.body %}</div>
     <div class="clearfix">
         {% if editmode %}
         <div class="cfx article-tags">
@@ -59,7 +59,7 @@
 </h2></td>
   </tr>
   {% for comment in article.comments %}
-  <tr class="edy-site-blog-comment">
+  <tr class="edy-site-blog-comment content-hyphenate">
    <td class="date" valign="top">{{ comment.created_at | format_date:"%d %b %y" }} {% removebutton %}</td>
    <td valign="top">
     <span class="author">{{ comment.author }}:</span> {{ comment.body_html }}
@@ -115,7 +115,7 @@
 </div>
 <!-- start footer -->
 <div id="footer">
-   <div id="legal" class="clearfix"><div id="designby">Unembellished template by <a href="http://www.freecsstemplates.org">freeCSStemplates.org</a></div><div id="footer-inner" class="clearfix">{% xcontent name="footer" %}</div><div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div></div>
+   <div id="legal" class="clearfix content-hyphenate"><div id="designby">Unembellished template by <a href="http://www.freecsstemplates.org">freeCSStemplates.org</a></div><div id="footer-inner" class="clearfix">{% xcontent name="footer" %}</div><div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div></div>
 </div>
       {% include "JS" %}
 <!-- end footer -->
