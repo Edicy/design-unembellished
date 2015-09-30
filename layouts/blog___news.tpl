@@ -36,7 +36,7 @@
             </div>
         {% endif %}
      {% addbutton class="add-article" %}
-     
+
 	{% for article in articles %}
   <div class="post content-hyphenate">
     <h1 class="title"><a href="{{article.url}}">{{article.title}}</a> | <span class="blog-author">{{article.created_at | format_date:"%d %b %y"}}, {{article.author.name}}</span></h1>

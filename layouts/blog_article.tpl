@@ -52,7 +52,7 @@
 
   <a name="comment-form"></a>
   <a name="comments"></a>
-  
+
   <table class="comment">
   <tr>
    <td colspan="2"><h2>{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>
@@ -64,7 +64,7 @@
    <td valign="top">
     <span class="author">{{ comment.author }}:</span> {{ comment.body_html }}
    </td>
-  
+
   </tr>
   {% endfor %}
   </table>{% unless comment.valid? %}<ul>
@@ -72,7 +72,7 @@
 <li>{{ error | lc }}</li>
 {% endfor %}
 </ul>{% endunless %}
-    
+
   <table style="width: 100%;">
   <tr>
    <td colspan="2"><h2>{{"add_a_comment"|lc}}</h2></td>
@@ -83,7 +83,7 @@
   </tr>
   <tr>
    <td>{{"email"|lc}}</td>
-  
+
    <td><input type="text" name="comment[author_email]" class="text" value="{{comment.author_email}}" /></td>
   </tr>
   <tr>
@@ -92,10 +92,10 @@
   </tr>
   <tr>
    <td></td>
-  
+
    <td><input type="submit" value="{{"submit"|lc}}" /></td>
   </tr>
-  
+
   </table>
   {% endcommentform %}
   </div>
